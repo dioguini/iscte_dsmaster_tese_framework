@@ -1,0 +1,165 @@
+2026-03-17 08:03:23 [INFO] [INFO]	2026-03-17 08:03:23	Log file initialized at: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\log\dq_framework_execution.log
+2026-03-17 08:03:23 [INFO] 
+
+
+
+
+[OK]	[FRAMEWORK INSTRUMENT EVALUATION]	2026-03-17 08:03:23	Arguments used for this run: 
+Instrument: plumbline
+Mode: automatic
+IDs List: ['0000']
+Year List: ['1900']
+2026-03-17 08:03:23 [INFO] 		[PLUMBLINE EXEC]	[DQ CHECKS - SAVE .CSV]	[STARTING]		(function: generate_log_starting_message)	Starting DQ Framework)
+2026-03-17 08:03:23 [INFO] 2026-03-17 08:03:23
+
+
+
+***** STARTING Data Quality Framework - 2026-03-17 08:03:23 *****
+
+
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Validating directories)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Directory exists: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\in\dq_framework\plumbline)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Directory created: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\profiling)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Directory created: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\dqchecks)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Directory created: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\dqchecks_visuals)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Directory created: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\threshold_validator)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Directory created: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\threshold_validator_visuals)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Directory exists: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\log)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Directory created: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\observability)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Loading manual configs for instrument plumbline)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Manual configs successfully loaded for instrument plumbline)
+2026-03-17 08:03:23 [INFO] 		[PLUMBLINE EXEC]	[DQ CHECKS - SAVE .CSV]	[SUCCESS]		(function: generate_log_success_message)	Read mode: automatic)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Loading all files in C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\in\dq_framework\plumbline)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Files loaded successfully)
+2026-03-17 08:03:23 [INFO] 		[PLUMBLINE EXEC]	[DQ CHECKS - SAVE .CSV]	[STARTING]		(function: generate_log_starting_message)	Getting automatic readings for all files)
+2026-03-17 08:03:23 [INFO] 		[PLUMBLINE EXEC]	[DQ CHECKS - SAVE .CSV]	[STARTING]		(function: generate_log_starting_message)	Files for this run: ['RADFIOPRUMOBASECOORD00000.txt'])
+2026-03-17 08:03:23 [INFO] 		[PLUMBLINE EXEC]	[DQ CHECKS - SAVE .CSV]	[STARTING]		(function: generate_log_starting_message)	Processing file RADFIOPRUMOBASECOORD00000.txt - automatic reading)
+2026-03-17 08:03:23 [INFO] 		[PLUMBLINE]	[PLUMBLINE INDIVIDUAL FILE PROCESSING]	[STARTING]		(function: generate_log_starting_message)	
+
+	##########		PROCESSING RADFIOPRUMOBASECOORD00000.txt file for automatic reading mode		##########	
+)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Loading manual configs for instrument plumbline)
+2026-03-17 08:03:23 [INFO] 		[DQ UTILS]	[VALIDATE DIRECTORY STRUCTURE]	[STARTING]		(function: generate_log_starting_message)	Manual configs successfully loaded for instrument plumbline)
+2026-03-17 08:03:23 [INFO] 2026-03-17 08:03:23
+
+***Running Data Profiler (Year & Year-Month Distribution & Profiler		***
+2026-03-17 08:03:23 [INFO] 		[REPORTING]	[GENERATING YEAR PROFILING]	[STARTING]		(function: generate_log_starting_message)	Generating Year Data Profiling csv Report - Sensor#00000 (1900, automatic readings) - Year Data Profiling Report)
+2026-03-17 08:03:23 [INFO] 		[REPORTING]	[GENERATING YEAR PROFILING]	[SUCCESS]		(function: generate_log_success_message)	Year Data Profiling csv report successfully generated: ProfilingSummaryYear_automatic_1900_00000.csv)
+2026-03-17 08:03:23 [INFO] 		[REPORTING]	[GENERATING YEAR PROFILING - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating Year Data Profiling plot - Sensor#00000 (1900, automatic readings) - Year Data Profiling Report)
+2026-03-17 08:03:23 [INFO] 		[REPORTING]	[GENERATING YEAR PROFILING - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Year Data Profiling plot successfully generated: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\profiling_visuals\ProfilingSummaryYear_automatic_1900_00000.png)
+2026-03-17 08:03:23 [INFO] 		[REPORTING]	[GENERATING YEAR PROFILING]	[STARTING]		(function: generate_log_starting_message)	Generating Year-Month Data Profiling csv Report - Sensor#00000 (1900, automatic readings) - Year-Month Data Profiling Report)
+2026-03-17 08:03:23 [INFO] 		[REPORTING]	[GENERATING YEAR PROFILING]	[SUCCESS]		(function: generate_log_success_message)	Year-Month Data Profiling csv report successfully generated: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\profiling\ProfilingSummaryYearMonth_automatic_1900_00000.csv)
+2026-03-17 08:03:23 [INFO] 		[REPORTING]	[GENERATING YEAR-MONTHLY PROFILING - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating Year-Month Data Profiling plot - Sensor#00000 (1900, automatic readings) - Year-MONTHLY Data Profiling Report)
+2026-03-17 08:03:24 [INFO] 		[REPORTING]	[GENERATING YEAR-MONTHLY PROFILING - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Year-Monthly Data Profiling plot successfully generated: )
+2026-03-17 08:03:24 [INFO] 		[PROFILING]	[GENERATING PROFILING HTML REPORT]	[STARTING]		(function: generate_log_starting_message)	Generating Data Profiling Report - Sensor#00000 (1900, automatic readings) - Data Profiling Report)
+2026-03-17 08:03:26 [INFO] 		[PROFILING]	[GENERATING PROFILING HTML REPORT]	[SUCCESS]		(function: generate_log_success_message)	Data Profiling html report successfully generated: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\profiling_visuals\ProfilingSummaryReport_automatic_1900_00000.html)
+2026-03-17 08:03:26 [INFO] 		[PROFILING]	[GENERATING PROFILING CSV REPORT]	[STARTING]		(function: generate_log_starting_message)	Generating Data Profiling Report - Sensor#00000 (1900, automatic readings) - Data Profiling Report)
+2026-03-17 08:03:26 [INFO] 		[PROFILING]	[GENERATING PROFILING CSV REPORT]	[SUCCESS]		(function: generate_log_success_message)	Data Profiling csv report successfully generated: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\profiling\ProfilingSummary_automatic_1900_00000.csv)
+2026-03-17 08:03:26 [INFO] 2026-03-17 08:03:26
+
+***DQ Dimensions Evaluation		***
+2026-03-17 08:03:26 [INFO] 		[DQ CHECKS]	[RUNNING DQ CHECKS - COMPLETENESS AUTOMATIC READINGS]	[STARTING]		(function: generate_log_starting_message)	Running DQ Checks for Completeness Automatic readings)
+2026-03-17 08:03:26 [INFO] 		[OBSERVABILITY]	[OBSERVABILITY - SAVE DETAIL CSV]	[STARTING]		(function: generate_log_starting_message)	[DETALHE] Saving records for check *hours_with_multiple_records_abs* for Sensor#00000 (1900, automatic) - Completeness)
+2026-03-17 08:03:26 [INFO] 		[OBSERVABILITY]	[OBSERVABILITY - SAVE DETAIL CSV]	[STARTING]		(function: generate_log_starting_message)	[DETALHE] Saving records for check *redundant_records_hours_abs* for Sensor#00000 (1900, automatic) - Completeness)
+2026-03-17 08:03:26 [INFO] 		[OBSERVABILITY]	[OBSERVABILITY - SAVE DETAIL CSV]	[STARTING]		(function: generate_log_starting_message)	[DETALHE] Saving records for check *hours_with_multiple_records_abs* for Sensor#00000 (1900, automatic) - Completeness)
+2026-03-17 08:03:26 [INFO] 		[OBSERVABILITY]	[OBSERVABILITY - SAVE DETAIL CSV]	[STARTING]		(function: generate_log_starting_message)	[DETALHE] Saving records for check *redundant_records_hours_abs* for Sensor#00000 (1900, automatic) - Completeness)
+2026-03-17 08:03:26 [INFO] 		[DQ CHECKS]	[RUNNING DQ CHECKS - COMPLETENESS AUTOMATIC READINGS]	[SUCCESS]		(function: generate_log_success_message)	Dictionary saved in memory)
+2026-03-17 08:03:26 [INFO] 2026-03-17 08:03:26
+
+***Writing DQ CHECKS Outputs to .csv files		***
+2026-03-17 08:03:26 [INFO] 		[DQ CHECKS]	[DQ CHECKS - SAVE .CSV]	[STARTING]		(function: generate_log_starting_message)	Saving DQ Checks .csv for - Sensor#00000 (1900, automatic readings) - Completeness Dimension)
+2026-03-17 08:03:26 [INFO] 		[DQ CHECKS]	[DQ CHECKS - SAVE .CSV]	[SUCCESS]		(function: generate_log_success_message)	csv saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\dqchecks\DQCheck_Completeness_automatic_1900_00000.csv)
+2026-03-17 08:03:26 [INFO] 2026-03-17 08:03:26
+
+***	Generating DQ Checks Plots - for individual sensor(s) file(s)	***
+2026-03-17 08:03:26 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating DQ Checks Report for Absolute metric type - Sensor#00000 (1900, automatic readings) - Absolute Metric Type )
+2026-03-17 08:03:26 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating visual file)
+2026-03-17 08:03:26 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot generated)
+2026-03-17 08:03:26 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\dqchecks_visuals\DQcheck_Completeness_automatic_1900_00000_AbsoluteMetrics.png)
+2026-03-17 08:03:26 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating DQ Checks Report for Percentage metric type - Sensor#00000 (1900, automatic readings) - Percentage Metric Type)
+2026-03-17 08:03:26 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating visual file)
+2026-03-17 08:03:27 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot generated)
+2026-03-17 08:03:27 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\dqchecks_visuals\DQcheck_Completeness_automatic_1900_00000_PercentageMetrics.png)
+2026-03-17 08:03:27 [INFO] 2026-03-17 08:03:27
+
+***Threshold Evaluation Evaluation		***
+2026-03-17 08:03:27 [INFO] 		[THRESHOLD VALIDATOR]	[RUNNING THRESHOLD VALIDATOR - THRESHOLD VALIDATOR AUTOMATIC READINGS]	[STARTING]		(function: generate_log_starting_message)	Running Threshold Validator for Automatic readings)
+2026-03-17 08:03:27 [INFO] 		[THRESHOLD VALIDATOR]	[RUNNING THRESHOLD VALIDATOR - THRESHOLD VALIDATOR AUTOMATIC READINGS]	[SUCCESS]		(function: generate_log_success_message)	Dictionary saved in memory)
+2026-03-17 08:03:27 [INFO] 2026-03-17 08:03:27
+
+***Writing Threshold Validator Outputs to .csv files		***
+2026-03-17 08:03:27 [INFO] 		[THRESHOLD VALIDATOR]	[THRESHOLD VALIDATOR - SAVE .CSV]	[STARTING]		(function: generate_log_starting_message)	Saving Threshold Validator .csv for - Sensor#00000 (1900, automatic readings) - Completeness Dimension)
+2026-03-17 08:03:27 [INFO] 		[THRESHOLD VALIDATOR]	[THRESHOLD VALIDATOR - SAVE .CSV]	[SUCCESS]		(function: generate_log_success_message)	csv saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\threshold_validator)
+2026-03-17 08:03:27 [INFO] 2026-03-17 08:03:27
+
+***Generating Threshold Validator Plots - for individual sensor(s) file(s)		***
+2026-03-17 08:03:27 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating DQ Checks Report for Percentage metric type - Completeness - Sensor#00000 (1900, automatic readings) - Absolute Metric Type )
+2026-03-17 08:03:27 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating visual file)
+2026-03-17 08:03:27 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot generated)
+2026-03-17 08:03:27 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\threshold_validator_visuals\ThresholdValidator_Completeness_automatic_1900_00000_AbsoluteMetrics.png)
+2026-03-17 08:03:27 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating DQ Checks Report for Percentage metric type - Completeness - Sensor#00000 (1900, automatic readings) - Percentage Metric Type )
+2026-03-17 08:03:27 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating visual file)
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot generated)
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\threshold_validator_visuals\ThresholdValidator_Completeness_automatic_1900_00000_PercentageMetrics.png)
+2026-03-17 08:03:28 [INFO] 2026-03-17 08:03:28
+
+***Generating Radial and Tangential Displacements		***
+2026-03-17 08:03:28 [INFO] 		[REPORTING - DISPLACEMENTS]	[MONTHLY AVG RADIAL DISPLACEMENT - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating monthly radial displacement plot - Monthly Radial Displacement - Sensor#00000 (1900, automatic readings))
+2026-03-17 08:03:28 [INFO] 		[REPORTING - DISPLACEMENTS]	[MONTHLY AVG RADIAL DISPLACEMENT - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\displacements_visuals\MonthlyRadialAvg_automatic_1900_00000.png)
+2026-03-17 08:03:28 [INFO] 		[REPORTING - DISPLACEMENTS]	[MONTHLY AVG TANGENTIAL DISPLACEMENT - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating monthly tangential displacement plot - Monthly Tangential Displacement - Sensor#00000 (1900, automatic readings))
+2026-03-17 08:03:28 [INFO] 		[REPORTING - DISPLACEMENTS]	[MONTHLY AVG TANGENTIAL DISPLACEMENT - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\displacements_visuals\MonthlyTangentialAvg_automatic_1900_00000.png)
+2026-03-17 08:03:28 [INFO] 2026-03-17 08:03:28
+
+***DQ Dimensions Evaluation		***
+2026-03-17 08:03:28 [INFO] 		[DQ CHECKS]	[RUNNING DQ CHECKS - TIMELINESS AUTOMATIC READINGS]	[STARTING]		(function: generate_log_starting_message)	Running DQ Checks for Timeliness Automatic readings)
+2026-03-17 08:03:28 [INFO] 		[OBSERVABILITY]	[OBSERVABILITY - SAVE DETAIL CSV]	[STARTING]		(function: generate_log_starting_message)	[DETALHE] Saving records for check *days_apart_previous_record_count_abs* for Sensor#00000 (1900, automatic) - Timeliness)
+2026-03-17 08:03:28 [INFO] 		[OBSERVABILITY]	[OBSERVABILITY - SAVE DETAIL CSV]	[STARTING]		(function: generate_log_starting_message)	[DETALHE] Saving records for check *max_gap_days_abs* for Sensor#00000 (1900, automatic) - Timeliness)
+2026-03-17 08:03:28 [INFO] [SUCCESS] Observability (DETAIL) saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\observability\Observability_Timeliness_automatic_1900_00000_max_gap_days_abs.csv
+2026-03-17 08:03:28 [INFO] 		[DQ CHECKS]	[RUNNING DQ CHECKS - TIMELINESS AUTOMATIC READINGS]	[SUCCESS]		(function: generate_log_success_message)	Dictionary saved in memory)
+2026-03-17 08:03:28 [INFO] 2026-03-17 08:03:28
+
+***Writing DQ CHECKS Outputs to .csv files		***
+2026-03-17 08:03:28 [INFO] 		[DQ CHECKS]	[DQ CHECKS - SAVE .CSV]	[STARTING]		(function: generate_log_starting_message)	Saving DQ Checks .csv for - Sensor#00000 (1900, automatic readings) - Timeliness Dimension)
+2026-03-17 08:03:28 [INFO] 		[DQ CHECKS]	[DQ CHECKS - SAVE .CSV]	[SUCCESS]		(function: generate_log_success_message)	csv saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\dqchecks\DQCheck_Timeliness_automatic_1900_00000.csv)
+2026-03-17 08:03:28 [INFO] 2026-03-17 08:03:28
+
+***	Generating DQ Checks Plots - for individual sensor(s) file(s)	***
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating DQ Checks Report for Absolute metric type - Sensor#00000 (1900, automatic readings) - Absolute Metric Type )
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating visual file)
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot generated)
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\dqchecks_visuals\DQcheck_Timeliness_automatic_1900_00000_AbsoluteMetrics.png)
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating DQ Checks Report for Percentage metric type - Sensor#00000 (1900, automatic readings) - Percentage Metric Type)
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating visual file)
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot generated)
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[DQ CHECKS - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\dqchecks_visuals\DQcheck_Timeliness_automatic_1900_00000_PercentageMetrics.png)
+2026-03-17 08:03:28 [INFO] 2026-03-17 08:03:28
+
+***Threshold Evaluation Evaluation		***
+2026-03-17 08:03:28 [INFO] 		[THRESHOLD VALIDATOR]	[RUNNING THRESHOLD VALIDATOR - THRESHOLD VALIDATOR AUTOMATIC READINGS]	[STARTING]		(function: generate_log_starting_message)	Running Threshold Validator for Automatic readings)
+2026-03-17 08:03:28 [INFO] 		[THRESHOLD VALIDATOR]	[RUNNING THRESHOLD VALIDATOR - THRESHOLD VALIDATOR AUTOMATIC READINGS]	[SUCCESS]		(function: generate_log_success_message)	Dictionary saved in memory)
+2026-03-17 08:03:28 [INFO] 2026-03-17 08:03:28
+
+***Writing Threshold Validator Outputs to .csv files		***
+2026-03-17 08:03:28 [INFO] 		[THRESHOLD VALIDATOR]	[THRESHOLD VALIDATOR - SAVE .CSV]	[STARTING]		(function: generate_log_starting_message)	Saving Threshold Validator .csv for - Sensor#00000 (1900, automatic readings) - Timeliness Dimension)
+2026-03-17 08:03:28 [INFO] 		[THRESHOLD VALIDATOR]	[THRESHOLD VALIDATOR - SAVE .CSV]	[SUCCESS]		(function: generate_log_success_message)	csv saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\threshold_validator)
+2026-03-17 08:03:28 [INFO] 2026-03-17 08:03:28
+
+***Generating Threshold Validator Plots - for individual sensor(s) file(s)		***
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating DQ Checks Report for Percentage metric type - Timeliness - Sensor#00000 (1900, automatic readings) - Absolute Metric Type )
+2026-03-17 08:03:28 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating visual file)
+2026-03-17 08:03:29 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot generated)
+2026-03-17 08:03:29 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\threshold_validator_visuals\ThresholdValidator_Timeliness_automatic_1900_00000_AbsoluteMetrics.png)
+2026-03-17 08:03:29 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating DQ Checks Report for Percentage metric type - Timeliness - Sensor#00000 (1900, automatic readings) - Percentage Metric Type )
+2026-03-17 08:03:29 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating visual file)
+2026-03-17 08:03:29 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot generated)
+2026-03-17 08:03:29 [INFO] 		[REPORTING]	[THRESHOLD VALIDATOR - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\threshold_validator_visuals\ThresholdValidator_Timeliness_automatic_1900_00000_PercentageMetrics.png)
+2026-03-17 08:03:29 [INFO] 2026-03-17 08:03:29
+
+***Generating Radial and Tangential Displacements		***
+2026-03-17 08:03:29 [INFO] 		[REPORTING - DISPLACEMENTS]	[MONTHLY AVG RADIAL DISPLACEMENT - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating monthly radial displacement plot - Monthly Radial Displacement - Sensor#00000 (1900, automatic readings))
+2026-03-17 08:03:29 [INFO] 		[REPORTING - DISPLACEMENTS]	[MONTHLY AVG RADIAL DISPLACEMENT - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\displacements_visuals\MonthlyRadialAvg_automatic_1900_00000.png)
+2026-03-17 08:03:29 [INFO] 		[REPORTING - DISPLACEMENTS]	[MONTHLY AVG TANGENTIAL DISPLACEMENT - VISUAL]	[STARTING]		(function: generate_log_starting_message)	Generating monthly tangential displacement plot - Monthly Tangential Displacement - Sensor#00000 (1900, automatic readings))
+2026-03-17 08:03:30 [INFO] 		[REPORTING - DISPLACEMENTS]	[MONTHLY AVG TANGENTIAL DISPLACEMENT - VISUAL]	[SUCCESS]		(function: generate_log_success_message)	Plot saved in: C:\Users\Admin\projects\iscte_master_degree\4_semestre\iscte_dsmaster_tese_framework\iscte_dsmaster_tese_framework\data\out\dq_framework\plumbline\20260317_080319\displacements_visuals\MonthlyTangentialAvg_automatic_1900_00000.png)
+2026-03-17 08:03:30 [INFO] 2026-03-17 08:03:30
+***** ENDED Quality Framework - 2026-03-17 08:03:30 *****
+
