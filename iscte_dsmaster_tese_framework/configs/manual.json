@@ -1,0 +1,151 @@
+{
+    "plumbline": {
+        "input_files_format": ".txt",
+        "profiling_columns": {
+            "automatic": [
+                "ANO",
+                "MES",
+                "DIA",
+                "HORA",
+                "MINUTO",
+                "DESLOCRADIALABS",
+                "DESLOCTANGABS"
+            ],
+            "manual": [
+                "ANO",
+                "MES",
+                "DIA",
+                "HORA",
+                "MINUTO",
+                "DESLOCRADIALABS",
+                "DESLOCTANGABS"
+            ]
+        },
+        "dq_checks": {
+            "Completeness": {
+                "automatic": {
+                    "max_allowed_records_per_day": 24,
+                    "max_allowed_records_per_hour": 1,
+                    "max_allowed_records_per_minute": 1,
+                    "max_days_missing_data": 0,
+                    "max_hours_missing_data": 0,
+                    "max_minutes_missing_data": 0
+                },
+                "manual": {
+                    "max_allowed_records_per_day": 1,
+                    "max_allowed_records_per_hour": 1,
+                    "max_allowed_records_per_minute": 1,
+                    "max_days_missing_data": 14,
+                    "max_hours_missing_data": 0,
+                    "max_minutes_missing_data": 0
+                }
+            },
+            "Timeliness": {
+                "automatic": {
+                    "max_interval_days": 0,
+                    "max_interval_hours": 1,
+                    "max_interval_minutes": 60
+                },
+                "manual": {
+                    "max_interval_days": 14,
+                    "max_interval_hours": 0,
+                    "max_interval_minutes": 0
+                }
+            }
+        },
+        "threshold_validator": {
+            "Completeness": {
+                "automatic": {
+                    "limit_factor": 1.05,
+                    "days_with_multiple_records_abs": 0,
+                    "days_with_multiple_records_prctg": 0,
+                    "hours_with_multiple_records_abs": 0,
+                    "hours_with_multiple_records_prctg": 0,
+                    "minutes_with_multiple_records_abs": 0,
+                    "minutes_with_multiple_records_prctg": 0,
+                    "missing_data_day_abs": 0,
+                    "missing_data_day_prctg": 0,
+                    "missing_data_hour_abs": 0,
+                    "missing_data_hour_prctg": 0,
+                    "missing_data_minute_abs": 0,
+                    "missing_data_minute_prctg": 0,
+                    "missing_DESLOCRADIALABS_abs": 0,
+                    "missing_DESLOCRADIALABS_prctg": 0,
+                    "missing_DESLOCTANGABS_abs": 0,
+                    "missing_DESLOCTANGABS_prctg": 0,
+                    "redundant_records_day_abs": 0,
+                    "redundant_records_hours_abs": 0,
+                    "redundant_records_minutes_abs": 0
+                },
+                "manual": {
+                    "limit_factor": 1.05,
+                    "days_with_multiple_records_abs": 0,
+                    "days_with_multiple_records_prctg": 0,
+                    "missing_data_day_abs": 0,
+                    "missing_data_day_prctg": 0,
+                    "missing_data_hour_abs": 0,
+                    "missing_data_hour_prctg": 0,
+                    "missing_data_minute_abs": 0,
+                    "missing_data_minute_prctg": 0,
+                    "missing_DESLOCRADIALABS_abs": 0,
+                    "missing_DESLOCRADIALABS_prctg": 0,
+                    "missing_DESLOCTANGABS_abs": 0,
+                    "missing_DESLOCTANGABS_prctg": 0,
+                    "redundant_records_day_abs": 0,
+                    "redundant_records_hours_abs": 0,
+                    "redundant_records_minutes_abs": 0
+                }
+            },
+            "Timeliness": {
+                "automatic": {
+                    "limit_factor": 1.05,
+                    "data_day_density_abs": 24,
+                    "data_hour_density_abs": 1,
+                    "data_minute_density_abs": 1,
+                    "days_apart_previous_record_count_abs": 1,
+                    "days_apart_previous_record_proportion_prctg": 0,
+                    "hours_apart_previous_record_count_abs": 1,
+                    "hours_apart_previous_record_proportion_prctg": 0,
+                    "interval_days_abs": 1,
+                    "interval_days_prctg": 0,
+                    "interval_hours_abs": 1,
+                    "interval_hours_prctg": 0,
+                    "interval_minutes_abs": 60,
+                    "interval_minutes_prctg": 0,
+                    "max_gap_days_abs": 0,
+                    "max_gap_hours_abs": 0,
+                    "max_gap_minutes_abs": 0,
+                    "minutes_apart_previous_record_count_abs": 0,
+                    "minutes_apart_previous_record_proportion_prctg": 0
+                },
+                "manual": {
+                    "limit_factor": 1.05,
+                    "data_day_density_abs": 0.07,
+                    "days_apart_previous_record_count_abs": 1,
+                    "days_apart_previous_record_proportion_prctg": 0,
+                    "interval_days_abs": 14,
+                    "interval_days_prctg": 0,
+                    "max_gap_days_abs": 0
+                }
+            }
+        },
+        "displacements": {
+            "automatic": {
+                "DESLOCRADIALABS": {
+                    "rolling_window": 7
+                },
+                "DESLOCTANGABS": {
+                    "rolling_window": 7
+                }
+            },
+            "manual": {
+                "DESLOCRADIALABS": {
+                    "rolling_window": 15
+                },
+                "DESLOCTANGABS": {
+                    "rolling_window": 15
+                }
+            }
+        }
+    }
+}

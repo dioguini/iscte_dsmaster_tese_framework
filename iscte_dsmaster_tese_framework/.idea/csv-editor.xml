@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CsvFileAttributes">
+    <option name="attributeMap">
+      <map>
+        <entry key="\data\out\dq_framework\plumbline\20251117_114302\dqchecks\DQCheck_Completeness_automatic_2025_49355.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\out\dq_framework\plumbline\20251117_121732\observability\ObservabilityAgg_Completeness_automatic_2024_00000_hours_with_multiple_records_abs.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\out\dq_framework\plumbline\20251117_121732\observability\ObservabilityAgg_Completeness_automatic_2024_00000_redundant_records_hours_abs.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\out\dq_framework\plumbline\20251117_121732\observability\Observability_Completeness_automatic_2024_00000_hours_with_multiple_records_abs.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\out\dq_framework\plumbline\20251117_121732\observability\Observability_Completeness_automatic_2024_00000_redundant_records_hours_abs.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
