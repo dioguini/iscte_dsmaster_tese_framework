@@ -162,7 +162,7 @@ Table below represents the `.csv` output file with all the threshold values calc
 | 00000 | 2024 | automatic | Timeliness | data_minute_density_abs | OK | 0.01 | 1.0 | 0.99 | -99.0 |
 | 00000 | 2024 | automatic | Timeliness | interval_days_abs | OK | 0.28 | 1.0 | 0.72 | -72.0 |
 
-`Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension_Threshold Validator.csv output file for automatic read mode - Timeliness DQ Dimension_Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension`
+`Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension`
 
 Below, figures represent the Alert distribution by Alert type. Different visualizations are created accordingly the DQ Check type, allowing the different DQ Check type (Absolute and Percentage) to be analysed in their specific report. Both figures apply to automatic read mode for **Timeliness** DQ Dimension.
 
