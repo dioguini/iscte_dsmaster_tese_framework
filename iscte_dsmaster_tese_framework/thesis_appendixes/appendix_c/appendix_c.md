@@ -24,30 +24,30 @@
 ## Framework Configurations File
 ### Framework configuration file parameters
 
-| Variable Name | Definition |
-| :--- | :--- |
-| ROOT_DIR | Root directory of the project |
-| SRC_DIR | Sources directory |
-| CONFIG_DIR | Directory where the configuration files must be placed |
-| ROOT_DATA_DIR | Root directory for data |
-| INPUT_DIR | Root directory for input data |
-| OUTPUT_DIR | Root directory for output data |
-| DQ_FRAMEWORK_INPUT_DIR | Root input directory for the application layer |
-| DQ_FRAMEWORK_OUTPUT_DIR | Root output directory for the application layer |
-| MANUAL_CONFIGS_FILENAME | Name of the manual configuration file |
-| THRESHOLD_VALIDATOR_LABELS | List of alert categories |
-| PLUMBLINE_INSTRUMENT_NAME | Instrument name, defined in lowercase |
-| PLUMBLINE_INPUT_DATA_DIR | Input directory for plumbline instrument data |
-| PLUMBLINE_MAIN_OUTPUT_DIR | Root output directory for the plumbline instrument |
-| PLUMBLINE_TIMESTAMP_OUTPUT_DIR | Output directory for plumbline instrument with execution timestamp |
-| PLUMBLINE_OUTPUT_PROFILING_DIR | Output directory for profiling module of the plumbline instrument |
-| PLUMBLINE_OUTPUT_DQCHECK_DIR | Output directory for DQ checks module of the plumbline instrument |
-| PLUMBLINE_OUTPUT_DQCHECK_VISUALS_DIR | Output directory for DQ check graphs for the plumbline instrument |
-| PLUMBLINE_OUTPUT_THRESHOLD_VALIDATOR_DIR | Output directory for threshold validator module for the plumbline instrument |
-| PLUMBLINE_OUTPUT_THRESHOLD_VALIDATOR_VISUALS_DIR | Output directory for threshold validator graphs for the plumbline instrument |
-| PLUMBLINE_DISPLACEMENTS_OUTPUT_DIR | Output directory for displacements visuals |
-| PLUMBLINE_LOG_DIR | Output directory for the log file of the plumbline instrument |
-| PLUMBLINE_RUN_MODES | List of possible run modes |
+| Variable Name                                      | Definition |
+|:---------------------------------------------------| :--- |
+| `ROOT_DIR`                                         | Root directory of the project |
+| `SRC_DIR`                                          | Sources directory |
+| `CONFIG_DIR`                                       | Directory where the configuration files must be placed |
+| `ROOT_DATA_DIR`                                    | Root directory for data |
+| `INPUT_DIR`                                        | Root directory for input data |
+| `OUTPUT_DIR`                                       | Root directory for output data |
+| `DQ_FRAMEWORK_INPUT_DIR`                           | Root input directory for the application layer |
+| `DQ_FRAMEWORK_OUTPUT_DIR`                          | Root output directory for the application layer |
+| `MANUAL_CONFIGS_FILENAME`                          | Name of the manual configuration file |
+| `THRESHOLD_VALIDATOR_LABELS`                       | List of alert categories |
+| `PLUMBLINE_INSTRUMENT_NAME`                        | Instrument name, defined in lowercase |
+| `PLUMBLINE_INPUT_DATA_DIR`                         | Input directory for plumbline instrument data |
+| `PLUMBLINE_MAIN_OUTPUT_DIR`                        | Root output directory for the plumbline instrument |
+| `PLUMBLINE_TIMESTAMP_OUTPUT_DIR`                   | Output directory for plumbline instrument with execution timestamp |
+| `PLUMBLINE_OUTPUT_PROFILING_DIR`                   | Output directory for profiling module of the plumbline instrument |
+| `PLUMBLINE_OUTPUT_DQCHECK_DIR`                     | Output directory for DQ checks module of the plumbline instrument |
+| `PLUMBLINE_OUTPUT_DQCHECK_VISUALS_DIR`             | Output directory for DQ check graphs for the plumbline instrument |
+| `PLUMBLINE_OUTPUT_THRESHOLD_VALIDATOR_DIR`         | Output directory for threshold validator module for the plumbline instrument |
+| `PLUMBLINE_OUTPUT_THRESHOLD_VALIDATOR_VISUALS_DIR` | Output directory for threshold validator graphs for the plumbline instrument |
+| `PLUMBLINE_DISPLACEMENTS_OUTPUT_DIR`               | Output directory for displacements visuals |
+| `PLUMBLINE_LOG_DIR`                                | Output directory for the log file of the plumbline instrument |
+| `PLUMBLINE_RUN_MODES`                              | List of possible run modes |
 
 ### Framework full configuration file
 ```
@@ -127,13 +127,13 @@ FRAMEWORK_AVAILABLE_INSTRUMENTS = [PLUMBLINE_INSTRUMENT_NAME]
 ```
 
 ### Manual full configuration file
-| Parameter | Definition |
-| :--- | :--- |
-| plumbline | Main node under which all other variables will be nested. Each instrument should have its own tree. |
-| input_files_format | File extension of the input files for the instrument. |
-| profiling_columns | Columns list to be used in the Profiling step, for each of the reading modes. |
-| dq_checks | Main node for variables related to DQ checks. Each dimension should be nested under this node and contain its respective variables for each operation mode. |
-| threshold_validator | Main node for variables related to threshold validators. Each dimension should be nested under this node and contain its respective variables for each operation mode. |
+| Parameter             | Definition |
+|:----------------------| :--- |
+| `plumbline`           | Main node under which all other variables will be nested. Each instrument should have its own tree. |
+| `input_files_format`  | File extension of the input files for the instrument. |
+| `profiling_columns`   | Columns list to be used in the Profiling step, for each of the reading modes. |
+| `dq_checks`           | Main node for variables related to DQ checks. Each dimension should be nested under this node and contain its respective variables for each operation mode. |
+| `threshold_validator` | Main node for variables related to threshold validators. Each dimension should be nested under this node and contain its respective variables for each operation mode. |
 
 
 ### configuration of the manual.json configuration file
@@ -278,139 +278,139 @@ FRAMEWORK_AVAILABLE_INSTRUMENTS = [PLUMBLINE_INSTRUMENT_NAME]
 
 ## DQ Checks configuration
 ### Manual configurations for Completeness Data Quality Checks in automatic reading mode
-| Variable | Description | Value |
-| :--- | :--- | :--- |
-| max_allowed_records_per_day | Maximum number of records expected per day | 24 |
-| max_allowed_records_per_hour | Maximum number of records expected per hour | 1 |
-| max_allowed_records_per_minute | Maximum number of records expected per minute | 1 |
-| max_days_missing_data | Maximum number of days allowed with missing data | 0 |
-| max_hours_missing_data | Maximum number of hours allowed with missing data | 0 |
-| max_minutes_missing_data | Maximum number of minutes allowed with missing data | 0 |
+| Variable                         | Description | Value |
+|:---------------------------------| :--- | :--- |
+| `max_allowed_records_per_day`    | Maximum number of records expected per day | 24 |
+| `max_allowed_records_per_hour`   | Maximum number of records expected per hour | 1 |
+| `max_allowed_records_per_minute` | Maximum number of records expected per minute | 1 |
+| `max_days_missing_data`          | Maximum number of days allowed with missing data | 0 |
+| `max_hours_missing_data`         | Maximum number of hours allowed with missing data | 0 |
+| `max_minutes_missing_data`       | Maximum number of minutes allowed with missing data | 0 |
 
 ### Manual configurations for Completeness dimension DQ Checks
-| Variable | Description | Value |
-| :--- | :--- | :--- |
-| max_allowed_records_per_day | Maximum number of records expected per day | 1 |
-| max_allowed_records_per_hour | Maximum number of records expected per hour | 1 |
-| max_allowed_records_per_minute | Maximum number of records expected per minute | 1 |
-| max_days_missing_data | Maximum number of days allowed with missing data | 14 |
-| max_hours_missing_data | Maximum number of hours allowed with missing data | 0 |
-| max_minutes_missing_data | Maximum number of minutes allowed with missing data | 0 |
+| Variable                         | Description | Value |
+|:---------------------------------| :--- | :--- |
+| `max_allowed_records_per_day`    | Maximum number of records expected per day | 1 |
+| `max_allowed_records_per_hour`   | Maximum number of records expected per hour | 1 |
+| `max_allowed_records_per_minute` | Maximum number of records expected per minute | 1 |
+| `max_days_missing_data`          | Maximum number of days allowed with missing data | 14 |
+| `max_hours_missing_data`         | Maximum number of hours allowed with missing data | 0 |
+| `max_minutes_missing_data`       | Maximum number of minutes allowed with missing data | 0 |
 
 
 ### Manual configurations for Timeliness Data Quality Checks in automatic reading mode
-| Variable | Description | Value |
-| :--- | :--- | :--- |
-| max_interval_days | Maximum acceptable interval in days between two consecutive records | 0 |
-| max_interval_hours | Maximum acceptable interval in hours between two consecutive records | 1 |
-| max_interval_minutes | Maximum acceptable interval in minutes between two consecutive records | 60 |
+| Variable               | Description | Value |
+|:-----------------------| :--- | :--- |
+| `max_interval_days`    | Maximum acceptable interval in days between two consecutive records | 0 |
+| `max_interval_hours`   | Maximum acceptable interval in hours between two consecutive records | 1 |
+| `max_interval_minutes` | Maximum acceptable interval in minutes between two consecutive records | 60 |
 
 ### Manual configurations for Timeliness dimension DQ Checks
-| Variable | Description | Value |
-| :--- | :--- | :--- |
-| max_interval_days | Maximum acceptable interval in days between two consecutive records | 14 |
-| max_interval_hours | Maximum acceptable interval in hours between two consecutive records | 0 |
-| max_interval_minutes | Maximum acceptable interval in minutes between two consecutive records | 0 |
+| Variable              | Description | Value |
+|:----------------------| :--- | :--- |
+| `max_interval_days`    | Maximum acceptable interval in days between two consecutive records | 14 |
+| `max_interval_hours`   | Maximum acceptable interval in hours between two consecutive records | 0 |
+| `max_interval_minutes` | Maximum acceptable interval in minutes between two consecutive records | 0 |
 
 
 ## Threshold Validator configurations
 
 ### Manual configurations for Completeness Threshold Validator in automatic reading mode
-| DQ Check | Description | Value |
-| :--- | :--- | :--- |
-| limit_factor | Tolerance multiplier for classifying WARNING vs ALERT | 1 |
-| missing_DESLOCRADIALABS_prctg | Percentage of missing values in the DESLOCRADIALABS field | 0 |
-| missing_DESLOCRADIALABS_abs | Absolute number of missing values in the DESLOCRADIALABS field | 0 |
-| missing_DESLOCTANGABS_prctg | Percentage of missing values in the DESLOCTANGABS field | 0 |
-| missing_DESLOCTANGABS_abs | Absolute number of missing values in the DESLOCTANGABS field | 0 |
-| missing_data_day_prctg | Percentage of days with missing data | 0 |
-| missing_data_day_abs | Number of days with missing data | 0 |
-| missing_data_hour_prctg | Percentage of hours with missing data | 0 |
-| missing_data_hour_abs | Number of hours with missing data | 0 |
-| missing_data_minute_prctg | Percentage of minutes with missing data | 0 |
-| missing_data_minute_abs | Absolute number of minutes with missing data | 0 |
-| ngaps_data_day_abs | Number of gaps (interruptions) per day | 0 |
-| ngaps_data_hour_abs | Number of gaps per hour | 0 |
-| ngaps_data_minute_abs | Number of gaps per minute | 0 |
-| days_with_multiple_records_abs | Absolute number of days with multiple (redundant) records | 0 |
-| days_with_multiple_records_prctg | Percentage of days with multiple records | 0 |
-| hours_with_multiple_records_abs | Absolute number of hours with multiple records | 0 |
-| hours_with_multiple_records_prctg | Percentage of hours with multiple records | 0 |
-| minutes_with_multiple_records_abs | Absolute number of minutes with multiple records | 0 |
-| minutes_with_multiple_records_prctg | Percentage of minutes with multiple records | 0 |
-| data_day_density_abs | Expected record density per day | 1 |
-| data_hour_density_abs | Expected record density per hour | 1 |
-| data_minute_density_abs | Expected record density per minute | 1 |
-| redundant_records_day_abs | Number of redundant records per day | 0 |
-| redundant_records_hours_abs | Number of redundant records per hour | 0 |
-| redundant_records_minutes_abs | Number of redundant records per minute | 0 |
+| DQ Check                              | Description | Value |
+|:--------------------------------------| :--- | :--- |
+| `limit_factor`                        | Tolerance multiplier for classifying WARNING vs ALERT | 1 |
+| `missing_DESLOCRADIALABS_prctg`       | Percentage of missing values in the DESLOCRADIALABS field | 0 |
+| `missing_DESLOCRADIALABS_abs`         | Absolute number of missing values in the DESLOCRADIALABS field | 0 |
+| `missing_DESLOCTANGABS_prctg`         | Percentage of missing values in the DESLOCTANGABS field | 0 |
+| `missing_DESLOCTANGABS_abs`           | Absolute number of missing values in the DESLOCTANGABS field | 0 |
+| `missing_data_day_prctg`              | Percentage of days with missing data | 0 |
+| `missing_data_day_abs`                | Number of days with missing data | 0 |
+| `missing_data_hour_prctg`             | Percentage of hours with missing data | 0 |
+| `missing_data_hour_abs`               | Number of hours with missing data | 0 |
+| `missing_data_minute_prctg`           | Percentage of minutes with missing data | 0 |
+| `missing_data_minute_abs`             | Absolute number of minutes with missing data | 0 |
+| `ngaps_data_day_abs`                  | Number of gaps (interruptions) per day | 0 |
+| `ngaps_data_hour_abs`                 | Number of gaps per hour | 0 |
+| `ngaps_data_minute_abs`               | Number of gaps per minute | 0 |
+| `days_with_multiple_records_abs`      | Absolute number of days with multiple (redundant) records | 0 |
+| `days_with_multiple_records_prctg`    | Percentage of days with multiple records | 0 |
+| `hours_with_multiple_records_abs`     | Absolute number of hours with multiple records | 0 |
+| `hours_with_multiple_records_prctg`   | Percentage of hours with multiple records | 0 |
+| `minutes_with_multiple_records_abs`   | Absolute number of minutes with multiple records | 0 |
+| `minutes_with_multiple_records_prctg` | Percentage of minutes with multiple records | 0 |
+| `data_day_density_abs`                | Expected record density per day | 1 |
+| `data_hour_density_abs`               | Expected record density per hour | 1 |
+| `data_minute_density_abs`             | Expected record density per minute | 1 |
+| `redundant_records_day_abs`           | Number of redundant records per day | 0 |
+| `redundant_records_hours_abs`         | Number of redundant records per hour | 0 |
+| `redundant_records_minutes_abs`       | Number of redundant records per minute | 0 |
 
 ### Manual configurations for Completeness Threshold Validator in manual reading mode
-| DQ Check | Description | Value |
-| :--- | :--- | :--- |
-| limit_factor | Tolerance multiplier for classifying WARNING vs ALERT | 1 |
-| missing_DESLOCRADIALABS_prctg | Percentage of missing values in the DESLOCRADIALABS field | 0 |
-| missing_DESLOCRADIALABS_abs | Absolute number of missing values in the DESLOCRADIALABS field | 0 |
-| missing_DESLOCTANGABS_prctg | Percentage of missing values in the DESLOCTANGABS field | 0 |
-| missing_DESLOCTANGABS_abs | Absolute number of missing values in the DESLOCTANGABS field | 0 |
-| missing_data_day_prctg | Percentage of days with missing data | 0 |
-| missing_data_day_abs | Number of days with missing data | 0 |
-| missing_data_hour_prctg | Percentage of hours with missing data | 0 |
-| missing_data_hour_abs | Number of hours with missing data | 0 |
-| missing_data_minute_prctg | Percentage of minutes with missing data | 0 |
-| missing_data_minute_abs | Absolute number of minutes with missing data | 0 |
-| ngaps_data_day_abs | Number of gaps (interruptions) per day | 0 |
-| ngaps_data_hour_abs | Number of gaps per hour | 0 |
-| ngaps_data_minute_abs | Number of gaps per minute | 0 |
-| days_with_multiple_records_abs | Absolute number of days with multiple (redundant) records | 0 |
-| days_with_multiple_records_prctg | Percentage of days with multiple records | 0 |
-| hours_with_multiple_records_abs | Absolute number of hours with multiple records | 0 |
-| hours_with_multiple_records_prctg | Percentage of hours with multiple records | 0 |
-| minutes_with_multiple_records_abs | Absolute number of minutes with multiple records | 0 |
-| minutes_with_multiple_records_prctg | Percentage of minutes with multiple records | 0 |
-| data_day_density_abs | Expected record density per day | 1 |
-| data_hour_density_abs | Expected record density per hour | 1 |
-| data_minute_density_abs | Expected record density per minute | 1 |
-| redundant_records_day_abs | Number of redundant records per day | 0 |
-| redundant_records_hours_abs | Number of redundant records per hour | 0 |
-| redundant_records_minutes_abs | Number of redundant records per minute | 0 |
+| DQ Check                              | Description | Value |
+|:--------------------------------------| :--- | :--- |
+| `limit_factor`                        | Tolerance multiplier for classifying WARNING vs ALERT | 1 |
+| `missing_DESLOCRADIALABS_prctg`       | Percentage of missing values in the DESLOCRADIALABS field | 0 |
+| `missing_DESLOCRADIALABS_abs`         | Absolute number of missing values in the DESLOCRADIALABS field | 0 |
+| `missing_DESLOCTANGABS_prctg`         | Percentage of missing values in the DESLOCTANGABS field | 0 |
+| `missing_DESLOCTANGABS_abs`           | Absolute number of missing values in the DESLOCTANGABS field | 0 |
+| `missing_data_day_prctg`              | Percentage of days with missing data | 0 |
+| `missing_data_day_abs`                | Number of days with missing data | 0 |
+| `missing_data_hour_prctg`             | Percentage of hours with missing data | 0 |
+| `missing_data_hour_abs`               | Number of hours with missing data | 0 |
+| `missing_data_minute_prctg`           | Percentage of minutes with missing data | 0 |
+| `missing_data_minute_abs`             | Absolute number of minutes with missing data | 0 |
+| `ngaps_data_day_abs`                  | Number of gaps (interruptions) per day | 0 |
+| `ngaps_data_hour_abs`                 | Number of gaps per hour | 0 |
+| `ngaps_data_minute_abs`               | Number of gaps per minute | 0 |
+| `days_with_multiple_records_abs`      | Absolute number of days with multiple (redundant) records | 0 |
+| `days_with_multiple_records_prctg`    | Percentage of days with multiple records | 0 |
+| `hours_with_multiple_records_abs`     | Absolute number of hours with multiple records | 0 |
+| `hours_with_multiple_records_prctg`   | Percentage of hours with multiple records | 0 |
+| `minutes_with_multiple_records_abs`   | Absolute number of minutes with multiple records | 0 |
+| `minutes_with_multiple_records_prctg` | Percentage of minutes with multiple records | 0 |
+| `data_day_density_abs`                | Expected record density per day | 1 |
+| `data_hour_density_abs`               | Expected record density per hour | 1 |
+| `data_minute_density_abs`             | Expected record density per minute | 1 |
+| `redundant_records_day_abs`           | Number of redundant records per day | 0 |
+| `redundant_records_hours_abs`         | Number of redundant records per hour | 0 |
+| `redundant_records_minutes_abs`       | Number of redundant records per minute | 0 |
 
 ### Manual configurations for Timeliness Threshold Validator in automatic reading mode
-| DQ Check | Description | Value |
-| :--- | :--- | :--- |
-| limit_factor | Tolerance multiplier for classifying WARNING vs ALERT | 1 |
-| interval_days_prctg | Percentage deviation from expected day interval | 1 |
-| interval_days_abs | Average interval in days between records | 1 |
-| interval_hours_prctg | Percentage deviation from expected hour interval | 1 |
-| interval_hours_abs | Average interval in hours between records | 1 |
-| interval_minutes_prctg | Percentage deviation from expected minute interval | 1 |
-| interval_minutes_abs | Average interval in minutes between records | 1 |
-| days_apart_previous_record_proportion_prctg | Proportion of gap between current and previous record (days) | 1 |
-| max_gap_days_abs | Maximum number of consecutive days without records | 0 |
-| days_apart_previous_record_count_abs | Number of days between the current and previous record | 1 |
-| hours_apart_previous_record_proportion_prctg | Proportion of gap between current and previous record (hours) | 0 |
-| max_gap_hours_abs | Maximum number of consecutive hours without records | 0 |
-| hours_apart_previous_record_count_abs | Number of hours between the current and previous record | 1 |
-| minutes_apart_previous_record_proportion_prctg | Proportion of gap between current and previous record (minutes) | 0 |
-| max_gap_minutes_abs | Maximum number of consecutive minutes without records | 0 |
-| minutes_apart_previous_record_count_abs | Number of minutes between the current and previous record | 0 |
+| DQ Check                                         | Description | Value |
+|:-------------------------------------------------| :--- | :--- |
+| `limit_factor`                                   | Tolerance multiplier for classifying WARNING vs ALERT | 1 |
+| `interval_days_prctg`                            | Percentage deviation from expected day interval | 1 |
+| `interval_days_abs`                              | Average interval in days between records | 1 |
+| `interval_hours_prctg`                           | Percentage deviation from expected hour interval | 1 |
+| `interval_hours_abs`                             | Average interval in hours between records | 1 |
+| `interval_minutes_prctg`                         | Percentage deviation from expected minute interval | 1 |
+| `interval_minutes_abs`                           | Average interval in minutes between records | 1 |
+| `days_apart_previous_record_proportion_prctg`    | Proportion of gap between current and previous record (days) | 1 |
+| `max_gap_days_abs`                               | Maximum number of consecutive days without records | 0 |
+| `days_apart_previous_record_count_abs`           | Number of days between the current and previous record | 1 |
+| `hours_apart_previous_record_proportion_prctg`   | Proportion of gap between current and previous record (hours) | 0 |
+| `max_gap_hours_abs`                              | Maximum number of consecutive hours without records | 0 |
+| `hours_apart_previous_record_count_abs`          | Number of hours between the current and previous record | 1 |
+| `minutes_apart_previous_record_proportion_prctg` | Proportion of gap between current and previous record (minutes) | 0 |
+| `max_gap_minutes_abs`                            | Maximum number of consecutive minutes without records | 0 |
+| `minutes_apart_previous_record_count_abs`        | Number of minutes between the current and previous record | 0 |
 
 ### Manual configurations for Timeliness Threshold Validator in manual reading mode
-| DQ Check | Description | Value |
-| :--- | :--- | :--- |
-| limit_factor | Tolerance multiplier for classifying WARNING vs ALERT | 1 |
-| interval_days_prctg | Percentage deviation from expected day interval | 1 |
-| interval_days_abs | Average interval in days between records | 1 |
-| interval_hours_prctg | Percentage deviation from expected hour interval | 1 |
-| interval_hours_abs | Average interval in hours between records | 1 |
-| interval_minutes_prctg | Percentage deviation from expected minute interval | 1 |
-| interval_minutes_abs | Average interval in minutes between records | 1 |
-| days_apart_previous_record_proportion_prctg | Proportion of gap between current and previous record (days) | 1 |
-| max_gap_days_abs | Maximum number of consecutive days without records | 0 |
-| days_apart_previous_record_count_abs | Number of days between the current and previous record | 1 |
-| hours_apart_previous_record_proportion_prctg | Proportion of gap between current and previous record (hours) | 0 |
-| max_gap_hours_abs | Maximum number of consecutive hours without records | 0 |
-| hours_apart_previous_record_count_abs | Number of hours between the current and previous record | 1 |
-| minutes_apart_previous_record_proportion_prctg | Proportion of gap between current and previous record (minutes) | 0 |
-| max_gap_minutes_abs | Maximum number of consecutive minutes without records | 0 |
-| minutes_apart_previous_record_count_abs | Number of minutes between the current and previous record | 0 |
+| DQ Check                                         | Description | Value |
+|:-------------------------------------------------| :--- | :--- |
+| `limit_factor`                                   | Tolerance multiplier for classifying WARNING vs ALERT | 1 |
+| `interval_days_prctg`                            | Percentage deviation from expected day interval | 1 |
+| `interval_days_abs`                              | Average interval in days between records | 1 |
+| `interval_hours_prctg`                           | Percentage deviation from expected hour interval | 1 |
+| `interval_hours_abs`                             | Average interval in hours between records | 1 |
+| `interval_minutes_prctg`                         | Percentage deviation from expected minute interval | 1 |
+| `interval_minutes_abs`                           | Average interval in minutes between records | 1 |
+| `days_apart_previous_record_proportion_prctg`    | Proportion of gap between current and previous record (days) | 1 |
+| `max_gap_days_abs`                               | Maximum number of consecutive days without records | 0 |
+| `days_apart_previous_record_count_abs`           | Number of days between the current and previous record | 1 |
+| `hours_apart_previous_record_proportion_prctg`   | Proportion of gap between current and previous record (hours) | 0 |
+| `max_gap_hours_abs`                              | Maximum number of consecutive hours without records | 0 |
+| `hours_apart_previous_record_count_abs`          | Number of hours between the current and previous record | 1 |
+| `minutes_apart_previous_record_proportion_prctg` | Proportion of gap between current and previous record (minutes) | 0 |
+| `max_gap_minutes_abs`                            | Maximum number of consecutive minutes without records | 0 |
+| `minutes_apart_previous_record_count_abs`        | Number of minutes between the current and previous record | 0 |
