@@ -129,6 +129,7 @@ The first column represents the absolute difference between `threshold` value al
 | 00000 | 2024 | automatic | Completeness | missing_data_minute_prctg | OK | 0.0 | 0.0 | 0.0 | 0.0 |
 | 00000 | 2024 | automatic | Completeness | redundant_records_day_abs | OK | 0.0 | 0.0 | 0.0 | 0 |
 | 00000 | 2024 | automatic | Completeness | redundant_records_minutes_abs | OK | 0.0 | 0.0 | 0.0 | 0 |
+
 `Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension`
 
 
@@ -136,7 +137,7 @@ Next figure shows the “Percentage” distribution DQ Checks for **Completeness
 
 ![img_8.png](img_8.png)
 
-`Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension_Threshold Validator Reporting output for automatic reading mode - Completeness DQ Dimension (Percentage DQ Check type)_Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension`
+`Threshold Validator Reporting output for automatic reading mode - Completeness DQ Dimension (Absolute DQ Check  type)`
 
 Table below represents the `.csv` output file with all the threshold values calculated based on the original command line execution command, in `threshold_validator.py` script but for **Timeliness** DQ Dimension in automatic reading mode.
 
@@ -167,13 +168,11 @@ Below, figures represent the Alert distribution by Alert type. Different visuali
 
 ![img_9.png](img_9.png)
 
-`Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension_Threshold Validator Reporting output for automatic reading mode - Timeliness DQ Dimension (Absolute DQ Check type)_Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension__Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension`
-
+`Threshold Validator Reporting output for automatic reading mode - Timeliness DQ Dimension (Absolute DQ Check type)`
 
 ![img_10.png](img_10.png)
 
-`Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension\_Threshold Validator Reporting output for automatic reading mode - Timeliness DQ Dimension (Percentage DQ Check type)\_Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension`
-
+`Threshold Validator Reporting output for automatic reading mode - Timeliness DQ Dimension (Percentage DQ Check type)`
 
 ### Observability
 Next sections show the outputs for the Observability Layer.
@@ -1704,7 +1703,7 @@ Both figures apply to manual read mode for **Completeness** DQ Dimension.
 
 ![img_23.png](img_23.png)
 
-`Threshold Validator Reporting output for manual reading mode - Completeness DQ Dimension (Absolute DQ Check  type)`
+`Threshold Validator Reporting output for manual reading mode - Completeness DQ Dimension (Absolute DQ Check type)`
 
 
 ![img_24.png](img_24.png)
