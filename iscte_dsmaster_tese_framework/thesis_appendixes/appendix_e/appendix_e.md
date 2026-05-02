@@ -1541,6 +1541,7 @@ Figure below shows one of the possible outputs of the `.html` report. In this ca
 Figure below shows one of the possible outputs of the `.html` report. In this case, the figure shows the `MES` distribution readings across the year for manual readings.
 
 ![img_12.png](img_12.png)
+
 `Ydata-Profiling output for MES variable in manual read mode (.html)`
 
 
