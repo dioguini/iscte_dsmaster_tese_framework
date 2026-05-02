@@ -22,36 +22,42 @@
 YData-Profiling Output for `ANO` variable in automatic reading mode. This is an output that can be checked in the `.html` report generated during Profiling module execution.
 
 ![img.png](img.png)
+
 `Ydata-Profiling output for ANO variable in automatic read mode (html)`
 
 
 YData-Profiling Output for `MES` variable in automatic reading mode. This is an output that can be checked in the `.html` report generated during Profiling module execution.
 
 ![img_1.png](img_1.png)
+
 `Ydata-Profiling output for MES variable in automatic read mode (html)`
 
 
 YData-Profiling Output for `HORA` variable in automatic reading mode. This is an output that can be checked in the `.html` report generated during Profiling module execution.
 
 ![img_2.png](img_2.png)
+
 `Ydata-Profiling output for HORA variable in automatic read mode (html)`
 
 
 YData-Profiling Output for `MINUTO` variable in automatic reading mode. This is an output that can be checked in the `.html` report generated during Profiling module execution.
 
 ![img_3.png](img_3.png)
+
 `Ydata-Profiling output for MINUTO variable in automatic read mode (html)`
 
 
 Data-Profiling Output for `DESLOCARADIALABS` variable in automatic reading mode. This is an output that can be checked in the `.html` report generated during Profiling module execution.
 
 ![img_4.png](img_4.png)
+
 `Ydata-Profiling output for DESLOCARADIALABS variable in automatic read mode (html)`
 
 
 Data-Profiling Output for `DESLOCARADIALABS` variable in automatic reading mode. This is an output that can be checked in the `.html` report generated during Profiling module execution.
 
 ![img_5.png](img_5.png)
+
 `Ydata-Profiling output for DESLOCARADIALABS variable in automatic read mode (html)`
 
 
@@ -87,9 +93,11 @@ While first figure represents “Absolute” DQ Check type, the second represent
 
 
 ![img_6.png](img_6.png)
+
 `Data Quality Checks Reporting output for automatic reading mode - Timeliness DQ Dimension (Absolute DQ Check Type)`
 
 ![img_7.png](img_7.png)
+
 `Data Quality Checks Reporting output for automatic reading mode - Timeliness DQ Dimension (Percentage DQ Check Type)`
 
 
@@ -127,6 +135,7 @@ The first column represents the absolute difference between `threshold` value al
 Next figure shows the “Percentage” distribution DQ Checks for **Completeness** DQ Dimension in automatic reading mode.
 
 ![img_8.png](img_8.png)
+
 `Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension_Threshold Validator Reporting output for automatic reading mode - Completeness DQ Dimension (Percentage DQ Check type)_Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension`
 
 Table below represents the `.csv` output file with all the threshold values calculated based on the original command line execution command, in `threshold_validator.py` script but for **Timeliness** DQ Dimension in automatic reading mode.
@@ -157,10 +166,12 @@ Table below represents the `.csv` output file with all the threshold values calc
 Below, figures represent the Alert distribution by Alert type. Different visualizations are created accordingly the DQ Check type, allowing the different DQ Check type (Absolute and Percentage) to be analysed in their specific report. Both figures apply to automatic read mode for **Timeliness** DQ Dimension.
 
 ![img_9.png](img_9.png)
+
 `Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension_Threshold Validator Reporting output for automatic reading mode - Timeliness DQ Dimension (Absolute DQ Check type)_Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension__Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension`
 
 
 ![img_10.png](img_10.png)
+
 `Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension\_Threshold Validator Reporting output for automatic reading mode - Timeliness DQ Dimension (Percentage DQ Check type)\_Threshold Validator.csv output file for automatic read mode - Completeness DQ Dimension`
 
 
@@ -1535,6 +1546,7 @@ Below table shows the different  metrics produced by the Ydata Profiling library
 Figure below shows one of the possible outputs of the `.html` report. In this case, the figure shows the `ANO` distribution readings across the year for manual readings.
 
 ![img_11.png](img_11.png)
+
 `Ydata-Profiling output for ANO variable in manual read mode (.html)`
 
 
@@ -1542,35 +1554,41 @@ Figure below shows one of the possible outputs of the `.html` report. In this ca
 
 ![img_12.png](img_12.png)
 
+
 `Ydata-Profiling output for MES variable in manual read mode (.html)`
 
 
 Figure below shows one of the possible outputs of the `.html` report. In this case, the figure shows the `DIA` distribution readings across the year for manual readings.
 
 ![img_13.png](img_13.png)
+
 `Ydata-Profiling output for DIA variable in manual read mode (.html)`
 
 
 Figure below shows one of the possible outputs of the `.html` report. In this case, the figure shows the `HORA` distribution readings across the year for manual readings.
 
 ![img_14.png](img_14.png)
+
 `Ydata-Profiling output for HORA variable in manual read mode (.html)`
 
 Figure below shows one of the possible outputs of the `.html` report. In this case, the figure shows the `MINUTO` distribution readings across the year for manual readings.
 
 ![img_15.png](img_15.png)
+
 `Ydata-Profiling output for MINUTO variable in manual read mode (.html)`
 
 
 Figure below shows one of the possible outputs of the `.html` report. In this case, the figure shows the `DESLOCRADIALABS` distribution readings across the year for manual readings.
 
 ![img_16.png](img_16.png)
+
 `Ydata-Profiling output for DESLOCRADIALABS variable in manual read mode (html)`
 
 
 Figure below shows one of the possible outputs of the `.html` report. In this case, the figure shows the `DIA` distribution readings across the year for manual readings.
 
 ![img_17.png](img_17.png)
+
 `Ydata-Profiling output for DESLOCTANGABS variable in manual read mode (.html)`
 
 Table below represents the output of the year-month Profiling, showing the manual readings distribution for the different months for 2024. The output is automatically sorted by `DATA_MONTH` field, representing the month first day of the month.
@@ -1596,6 +1614,7 @@ Table below represents the output of the year-month Profiling, showing the manua
 Figure below shows the monthly total number of readings registered for 2024.
 
 ![img_18.png](img_18.png)
+
 `Year-month distribution visualization for manual reading mode`
 
 ### DQ Checks
@@ -1623,12 +1642,14 @@ The first figura represents “Absolute” DQ Check type, while the second one r
 Data Quality Checks Reporting output for manual reading mode - Completeness DQ Dimension (Absolute DQ Check Type)
 
 ![img_19.png](img_19.png)
+
 `Data Quality Checks Reporting output for manual reading mode - Completeness DQ Dimension (Absolute DQ Check Type)`
 
 
 Data Quality Checks Reporting output for manual reading mode - Completeness DQ Dimension (Percentage DQ Check Type)
 
 ![img_20.png](img_20.png)
+
 `Data Quality Checks Reporting output for manual reading mode - Completeness DQ Dimension (Percentage DQ Check Type)`
 
 Below table describes all output values for each one of the DQ Checks implemented for **Timeliness** DQ Dimension in manual read mode.
@@ -1649,9 +1670,11 @@ Next two figures show the different outputs from de DQ Checks calculated for DQ 
 It is possible to check the distribution of records (`Value`) for a specific DQ Check. While first one represents DQ Check “Absolute” type, the second represents metrics that are DQ Check “Percentage” type.
 
 ![img_21.png](img_21.png)
+
 `Data Quality Checks Reporting output for manual reading mode - Timeliness DQ Dimension (Absolute DQ Check Type)`
 
 ![img_22.png](img_22.png)
+
 `Data Quality Checks Reporting output for manual reading mode - Timeliness DQ Dimension (Percentage DQ Check Type)`
 
 ### Threshold Validator
@@ -1680,10 +1703,12 @@ Below, figures represent the Alert distribution by Alert type. Different visuali
 Both figures apply to manual read mode for **Completeness** DQ Dimension.
 
 ![img_23.png](img_23.png)
+
 `Threshold Validator Reporting output for manual reading mode - Completeness DQ Dimension (Absolute DQ Check  type)`
 
 
 ![img_24.png](img_24.png)
+
 `Threshold Validator Reporting output for manual reading mode - Completeness DQ Dimension (Percentage DQ Check type)`
 
 
@@ -1709,10 +1734,12 @@ This value is `100` (meaning 100%) when there is a threshold defined as `0` and 
 Below, figures represent the Alert distribution by Alert type. Different visualizations are created accordingly the DQ Check type, allowing the different DQ Check type (Absolute and Percentage) to be analysed in their specific report. Both figures apply to manual read mode for **Timeliness** DQ Dimension.
 
 ![img_25.png](img_25.png)
+
 `Threshold Validator Reporting output for manual reading mode - Timeliness DQ Dimension (Absolute DQ Check  type)`
 
 
 ![img_26.png](img_26.png)
+
 `Threshold Validator Reporting output for manual reading mode - Timeliness DQ Dimension (Percentage DQ Check type)`
 
 
@@ -1721,10 +1748,12 @@ For both, in the same chart are represented in a violin plot the distribution of
 
 
 ![img_27.png](img_27.png)
+
 `Monthly Average Radial Displacement for manual reading mode`
 
 
 ![img_28.png](img_28.png)
+
 `Monthly Average Tangential Displacement for manual reading mode`
 
 
