@@ -4,7 +4,7 @@
 - [Appendix G - Management and Politics Layer Document Proposal](#appendix-g---management-and-politics-layer-document-proposal)
   - [Management and Politics Layer Document Proposal](#management-and-politics-layer-document-proposal)
     - [Gestão e Políticas da Qualidade de Dados](#gestão-e-políticas-da-qualidade-de-dados)
-      - [Identificação – Ownership do Processo](#identificação--ownership-do-processo)
+      - [Identificação - Ownership do Processo](#identificação--ownership-do-processo)
       - [Histórico de versões](#histórico-de-versões)
       - [Objetivo](#objetivo)
       - [Scope](#scope)
@@ -22,7 +22,7 @@
 ### Gestão e Políticas da Qualidade de Dados
 ___
 
-####  Identificação – Ownership do Processo
+####  Identificação - Ownership do Processo
 **Responsável**: Utilizador_1
 
 **Versão**: v1.0
@@ -73,7 +73,7 @@ ___
     | Fabricante | N/A                                                                                                                                                                                                                                                                                                                                    |
     | Modelo | N/A                                                                                                                                                                                                                                                                                                                                    |
     | Documentação técnica | N/A                                                                                                                                                                                                                                                                                                                                    |
-    | Variáveis medidas | **ANO** – Ano de leitura<br>**MES** – Mês de leitura<br>**DIA** – Dia de leitura<br>**HORA** – Hora de leitura<br>**MINUTO** – Minuto de leitura<br>**DESLOCRADIALABS** – Valor absoluto do Deslocamento Radial da posição observada do fio de prumo<br>**DESLOCTANGABS** – Valor absoluto do Deslocamento Tangencial da posição observada do fio de prumo |
+    | Variáveis medidas | **ANO** - Ano de leitura<br>**MES** - Mês de leitura<br>**DIA** - Dia de leitura<br>**HORA** - Hora de leitura<br>**MINUTO** - Minuto de leitura<br>**DESLOCRADIALABS** - Valor absoluto do Deslocamento Radial da posição observada do fio de prumo<br>**DESLOCTANGABS** - Valor absoluto do Deslocamento Tangencial da posição observada do fio de prumo |
     | Limites operacionais e de precisão | N/A                                                                                                                                                                                                                                                                                                                                    |
 
 ___
@@ -112,16 +112,16 @@ ___
 
     | Campo | Descrição |
     | :--- | :--- |
-    | Pontos de Execução de DQ Checks | Fase de Aquisição dos dados dos sensores– Sim<br>Dados armazenados – Não<br>Transformação de dados – Não |
+    | Pontos de Execução de DQ Checks | Fase de Aquisição dos dados dos sensores- Sim<br>Dados armazenados - Não<br>Transformação de dados - Não |
 
 ___
 
 #### Políticas de Avaliação da Qualidade de Dados
 - **Sensor do fio de prumo**
 
-  - _**Completeness**_ – Medir a qualidade dos dados ao nível da completude para cada variável dos ficheiros de leitura (automático e manual) para os dados de deslocamento do fio de prumo.
+  - _**Completeness**_ - Medir a qualidade dos dados ao nível da completude para cada variável dos ficheiros de leitura (automático e manual) para os dados de deslocamento do fio de prumo.
 
-  - _**Timeliness**_ – Medir a qualidade dos dados do fio de prumo ao nível temporal, sendo para tal necessário implementar métricas onde se identifiquem intervalos de aquisição de dados, densidade temporal por forma a verificar se a quantidade de registos vão de encontro ao que está definido.
+  - _**Timeliness**_ - Medir a qualidade dos dados do fio de prumo ao nível temporal, sendo para tal necessário implementar métricas onde se identifiquem intervalos de aquisição de dados, densidade temporal por forma a verificar se a quantidade de registos vão de encontro ao que está definido.
 
 
 ___

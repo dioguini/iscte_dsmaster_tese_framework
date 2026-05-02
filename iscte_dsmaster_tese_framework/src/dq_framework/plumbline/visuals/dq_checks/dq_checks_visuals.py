@@ -32,9 +32,12 @@ def create_dqcheck_visual_plot(in_dqchecks_results_dict: dict, in_plot_title: st
     logger_starter_message = f"Generating visual file"
     logger_success_message = f"Plot generated"
 
+    plot_x_label = f"Value"
+    plot_y_label = f"DQ Check"
+
     try:
         logger.info(generate_log_starting_message(logger_module, logger_module_info, logger_starter_message))
-        plt.figure(figsize=(17, 10))
+        plt.figure(figsize=(21, 10))
 
         # Convert dict to DataFrame
         df = pd.DataFrame(list(in_dqchecks_results_dict.items()), columns=["metric", "value"])
@@ -44,13 +47,15 @@ def create_dqcheck_visual_plot(in_dqchecks_results_dict: dict, in_plot_title: st
 
         for bar in bars:
             plt.text(bar.get_width(), bar.get_y() + bar.get_height() / 2,
-                     f"{bar.get_width():.4f}", va='center', fontsize=10)
+                     f"{bar.get_width():.4f}", va='center', fontsize=12)
 
-        plt.title(in_plot_title)
-        plt.xlabel('Value')
-        plt.ylabel("DQ Check")
+        plt.title(in_plot_title, fontsize=13)
+        plt.xlabel(plot_x_label, fontsize=13)
+        plt.ylabel(plot_y_label, fontsize=13)
+        plt.xticks(fontsize=12)
+        plt.yticks(fontsize=12)
         plt.tight_layout()
-        plt.savefig(in_full_output_visual_dir)
+        plt.savefig(in_full_output_visual_dir, bbox_inches='tight')
         plt.close()
 
         logger.info(generate_log_success_message(logger_module, logger_module_info, logger_success_message))

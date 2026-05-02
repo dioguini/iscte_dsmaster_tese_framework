@@ -187,7 +187,7 @@ def generate_year_distribution(in_sensor_data: pd.DataFrame, in_ouput_results_ou
                     f"{int(height)}",
                     ha='center',
                     va='center',
-                    fontsize=10
+                    fontsize=1
                 )
 
             plt.xlabel("Year")
@@ -277,21 +277,23 @@ def generate_year_month_distribution(in_sensor_data: pd.DataFrame, in_output_res
 
             for bar in bars:
                 height = bar.get_height()
+                y_pos = height + 0.1 if height < 10 else height + 10
                 plt.text(
                     bar.get_x() + bar.get_width() / 2,  # centro da barra no eixo x
-                    height + 10,  # meio da barra no eixo y
+                    y_pos,  # meio da barra no eixo y
                     f"{int(height)}",  # valor a mostrar
                     ha='center',  # horizontal alignment
                     va='center',  # vertical alignment
-                    fontsize=9
+                    fontsize=16
                 )
 
-            plt.xlabel("Year_Month")
-            plt.ylabel("# Readings")
-            plt.title(plot_title)
-            plt.xticks(rotation=45)
+            plt.xlabel("Year_Month", fontsize=13)
+            plt.ylabel("# Readings", fontsize=13)
+            plt.title(plot_title, fontsize=13)
+            plt.xticks(rotation=45, fontsize=12)
+            plt.yticks(fontsize=12)
             os.makedirs(in_output_visual_dir, exist_ok=True)
-            plt.savefig(full_plot_path)
+            plt.savefig(full_plot_path, bbox_inches='tight')
             plt.close()
 
             logger.info(generate_log_success_message(logger_module, logger_module_info, logger_success_message))

@@ -9,7 +9,7 @@ from utils.dq_utils import setup_logger, format_date_logger, create_directory
 from configs.framework import PLUMBLINE_LOG_DIR, THRESHOLD_VALIDATOR_LABELS, STATUS_COLOR_MAP
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import textwrap
 
 def create_threshold_validator_visual_plot(
     in_threshold_dict: dict,
@@ -63,9 +63,7 @@ def create_threshold_validator_visual_plot(
         # === Plot creation ===
         fig, axs = plt.subplots(
             2, 1,
-            figsize=(15, 9)  # Menor altura total
-            #gridspec_kw={"height_ratios": [0.6, 1.4]},  # Gráfico mais compacto, mais espaço para tabela
-            #constrained_layout=True  # Melhor distribuição de espaço
+            figsize=(10, 9)
         )
 
         # Bar plot
@@ -84,12 +82,13 @@ def create_threshold_validator_visual_plot(
                 int(yval),
                 ha="center",
                 va="bottom",
-                fontsize=9,
+                fontsize=12,
             )
 
         # Table creation
-        table_data = df[["metric", "value", "threshold", "threshold_diff", "threshold_deviation_pct", "status"]].values.tolist()
-        column_labels = [
+        table_data = df[
+            ["metric", "value", "threshold", "threshold_diff", "threshold_deviation_pct", "status"]].values.tolist()
+        column_labels_raw = [
             "Metric",
             "Metric Value",
             "Threshold Value",
@@ -98,27 +97,52 @@ def create_threshold_validator_visual_plot(
             "Alert Label",
         ]
 
+        column_labels = [textwrap.fill(label, width=9) for label in column_labels_raw]
+
         axs[1].axis("off")
+        # 1. Criação da tabela com BBOX em vez de LOC
         table = axs[1].table(
             cellText=table_data,
             colLabels=column_labels,
-            loc="center",
-            cellLoc="left"
+            cellLoc="center",
+            bbox=[0, 0, 1, 1]  # [x, y, largura, altura] -> Ocupa 100% da área inferior
         )
-        #table.auto_set_font_size(False)
-        #table.set_fontsize(10)
-        table.scale(0.5, 1.5)  # Coloca a tabela mais compacta
+        # 2. Forçar o tamanho da letra pretendido
+        table.auto_set_font_size(False)
+        table.set_fontsize(12)  # Ajusta este valor (ex: 22 ou 24) consoante o resultado visual
 
-        # Fit column widths dynamically
+        # (A linha table.scale foi removida propositadamente)
+
+        # 3. Ajuste dinâmico da largura das colunas (mantido do teu código original)
         col_max_lengths = [max([len(str(row[i])) for row in table_data] + [len(col_label)]) for i, col_label in
                            enumerate(column_labels)]
         total_length = sum(col_max_lengths)
-        col_widths = [length / total_length for length in col_max_lengths]
+        col_widths_manuais = [
+            0.50,
+            0.10,
+            0.10,
+            0.10,
+            0.10,
+            0.10
+        ]
 
+        # Aplicas à tabela
         for (row, col), cell in table.get_celld().items():
-            cell.set_width(col_widths[col])  # fator de ajuste visual
+            # Se for a linha dos cabeçalhos (row == 0), aumenta a altura para acomodar o wrap
+            if row == 0:
+                cell.set_height(0.3)  # Ajusta este valor (ex: 0.20 a 0.35) consoante o número de linhas
+
+            if col == 0:
+                # set_ha significa "set horizontal alignment"
+                cell.get_text().set_ha('left')
+
+            cell.set_width(col_widths_manuais[col])
 
         plt.tight_layout()
+
+        # 4. (Opcional) Reduzir o espaço em branco entre o gráfico de barras e a tabela
+        plt.subplots_adjust(hspace=0.2)
+
         plt.savefig(in_full_output_visual_dir)
         plt.close()
         logger.info(generate_log_success_message(logger_module, logger_module_info, logger_success_message))

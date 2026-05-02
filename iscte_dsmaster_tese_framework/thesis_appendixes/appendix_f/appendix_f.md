@@ -4,7 +4,7 @@
 - [Appendix F - Management and Politics Layer Document Template (author proposal)](#appendix-f---management-and-politics-layer-document-template-author-proposal)
   - [Management and Politics Layer Document Template](#management-and-politics-layer-document-template)
     - [Gestão e Políticas da Qualidade de Dados](#gestão-e-políticas-da-qualidade-de-dados)
-      - [Identificação – Ownership do Processo](#identificação--ownership-do-processo)
+      - [Identificação - Ownership do Processo](#identificação--ownership-do-processo)
       - [Histórico de versões](#histórico-de-versões)
       - [Objetivo](#objetivo)
       - [Scope](#scope)
@@ -22,7 +22,7 @@
 ### Gestão e Políticas da Qualidade de Dados
 ___
 
-####  Identificação – Ownership do Processo
+####  Identificação - Ownership do Processo
 
 **Responsável:** _\<Nome do Responsável>_
 
@@ -71,7 +71,7 @@ ___
     | Fabricante | _\<Identificação do Fabricante do sensor do tipo X>_                                                                                      |
     | Modelo | _\<Identificação do modelo do sensor do tipo X>_                                                                                          |
     | Documentação técnica | _\<Diretório da documentação técnica do sensor do tipo X>_                                                                                |
-    | Variáveis medidas | _\<Variável 1 – Significado da variável 1>_<br>_\<Variável 2 – Significado da variável 3>_<br>_\<Variável 3 – Significado da variável 3>_ |
+    | Variáveis medidas | _\<Variável 1 - Significado da variável 1>_<br>_\<Variável 2 - Significado da variável 3>_<br>_\<Variável 3 - Significado da variável 3>_ |
 
 ___
 

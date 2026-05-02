@@ -54,13 +54,27 @@ def plot_monthly_radial_displacement(in_sensor_data_df: pd.DataFrame, in_output_
                        inner="box",
                        palette=MONTHLY_COLOR_PALETTE)
 
-        plt.title(plot_title)
-        plt.xlabel(plot_x_label)
-        plt.ylabel(plot_y_label)
-        plt.xticks(rotation=45)
+        x_deviation = 0.2  # horizontal deviation
+        y_deviation = in_sensor_data_df["DESLOCRADIALABS"].max() * 4 # vertical deviation
+
+        for idx, val in enumerate(in_sensor_data_df["DESLOCRADIALABS"]):
+            plt.text(
+                x=idx + x_deviation,
+                y = val + y_deviation,
+                s=f"{val:.2f}",
+                ha='left',
+                va='center',
+                fontsize=13
+            )
+
+        plt.title(plot_title, fontsize=13)
+        plt.xlabel(plot_x_label, fontsize=13)
+        plt.ylabel(plot_y_label, fontsize=13)
+        plt.xticks(rotation=45, fontsize=12)
+        plt.yticks(fontsize=12)
         plt.tight_layout()
         os.makedirs(in_output_visual_dir, exist_ok=True)
-        plt.savefig(full_plot_path)
+        plt.savefig(full_plot_path, bbox_inches='tight')
         plt.close()
 
         logger.info(generate_log_success_message(logger_module, logger_module_info, logger_success_message))
@@ -68,7 +82,6 @@ def plot_monthly_radial_displacement(in_sensor_data_df: pd.DataFrame, in_output_
     except Exception as e:
         logger.error(generate_log_error_message(logger_module, logger_module_info, e))
         sys.exit(1)
-
 
 def plot_monthly_radial_average_displacement(in_sensor_data_df, in_output_visual_dir, in_plumbline_id, in_read_mode, in_year):
     """
@@ -115,17 +128,28 @@ def plot_monthly_radial_average_displacement(in_sensor_data_df, in_output_visual
                        inner="box",
                        palette=MONTHLY_COLOR_PALETTE)
 
-        # Anotar os valores nas marcas
-        for idx, val in enumerate(monthly_avg_df["DESLOCRADIALABS"]):
-            plt.text(idx, val, f"{val:.2f}", ha='center', va='bottom', fontsize=9)
 
-        plt.title(plot_title)
-        plt.xlabel(plot_x_label)
-        plt.ylabel(plot_y_label)
-        plt.xticks(rotation=45)
+        x_deviation = 0.2  # horizontal deviation
+        y_deviation = monthly_avg_df["DESLOCRADIALABS"].max() * 0.2 # vertical deviation
+
+        for idx, val in enumerate(monthly_avg_df["DESLOCRADIALABS"]):
+            plt.text(
+                x=idx + x_deviation,
+                y = val + y_deviation,
+                s=f"{val:.2f}",
+                ha='left',
+                va='center',
+                fontsize=13
+            )
+
+        plt.title(plot_title, fontsize=13)
+        plt.xlabel(plot_x_label, fontsize=13)
+        plt.ylabel(plot_y_label, fontsize=13)
+        plt.xticks(rotation=45, fontsize=12)
+        plt.yticks(fontsize=12)
         plt.tight_layout()
         os.makedirs(in_output_visual_dir, exist_ok=True)
-        plt.savefig(full_plot_path)
+        plt.savefig(full_plot_path, bbox_inches='tight')
         plt.close()
 
         logger.info(generate_log_success_message(logger_module, logger_module_info, logger_success_message))
@@ -133,6 +157,8 @@ def plot_monthly_radial_average_displacement(in_sensor_data_df, in_output_visual
     except Exception as e:
         logger.error(generate_log_error_message(logger_module, logger_module_info, e))
         sys.exit(1)
+
+
 
 
 def plot_monthly_tangential_displacement(in_sensor_data_df: pd.DataFrame, in_output_visual_dir: str, in_plumbline_id: str, in_read_mode: str, in_year: int) -> None:
@@ -154,7 +180,7 @@ def plot_monthly_tangential_displacement(in_sensor_data_df: pd.DataFrame, in_out
     logger_module = f"REPORTING - DISPLACEMENTS"
     logger_module_info = f"MONTHLY TANGENTIAL DISPLACEMENT - VISUAL"
     logger_starter_message = f"Generating monthly tangential displacement plot - Monthly Tangential Displacement - Sensor#{in_plumbline_id} ({in_year}, {in_read_mode} readings)"
-    logger_success_message = f"Plot saved in: "
+
     plot_title = f"Monthly Tangential Displacement - Sensor#{in_plumbline_id} ({in_year} {in_read_mode} readings)"
     plot_x_label = f"Month"
     plot_y_label = f"Displacement (Tangential)"
@@ -178,13 +204,27 @@ def plot_monthly_tangential_displacement(in_sensor_data_df: pd.DataFrame, in_out
                        inner="box",
                        palette=MONTHLY_COLOR_PALETTE)
 
-        plt.title(plot_title)
-        plt.xlabel(plot_x_label)
-        plt.ylabel(plot_y_label)
-        plt.xticks(rotation=45)
+        x_deviation = 0.2  # horizontal deviation
+        y_deviation = in_sensor_data_df["DESLOCTANGABS"].max() * -0.5 # vertical deviation
+
+        for idx, val in enumerate(in_sensor_data_df["DESLOCTANGABS"]):
+            plt.text(
+                x=idx + x_deviation,
+                y = val + y_deviation,
+                s=f"{val:.2f}",
+                ha='left',
+                va='center',
+                fontsize=13
+            )
+
+        plt.title(plot_title, fontsize=13)
+        plt.xlabel(plot_x_label, fontsize=13)
+        plt.ylabel(plot_y_label, fontsize=13)
+        plt.xticks(rotation=45, fontsize=12)
+        plt.yticks(fontsize=12)
         plt.tight_layout()
         os.makedirs(in_output_visual_dir, exist_ok=True)
-        plt.savefig(full_plot_path)
+        plt.savefig(full_plot_path, bbox_inches='tight')
         plt.close()
 
         logger.info(generate_log_success_message(logger_module, logger_module_info, logger_success_message))
@@ -239,17 +279,27 @@ def plot_monthly_tangential_average_displacement(in_sensor_data_df, in_output_vi
                        inner="box",
                        palette=MONTHLY_COLOR_PALETTE)
 
-        # Anotar os valores nas marcas
-        for idx, val in enumerate(monthly_avg_df["DESLOCTANGABS"]):
-            plt.text(idx, val, f"{val:.2f}", ha='center', va='bottom', fontsize=9)
+        x_deviation = 0.1  # horizontal deviation
+        y_deviation = monthly_avg_df["DESLOCTANGABS"].max() * -0.2  # vertical deviation
 
-        plt.title(plot_title)
-        plt.xlabel(plot_x_label)
-        plt.ylabel(plot_y_label)
-        plt.xticks(rotation=45)
+        for idx, val in enumerate(monthly_avg_df["DESLOCTANGABS"]):
+            plt.text(
+                x=idx + x_deviation,
+                y=val + y_deviation,
+                s=f"{val:.2f}",
+                ha='left',
+                va='center',
+                fontsize=13
+            )
+
+        plt.title(plot_title, fontsize=13)
+        plt.xlabel(plot_x_label, fontsize=13)
+        plt.ylabel(plot_y_label, fontsize=13)
+        plt.xticks(rotation=45, fontsize=12)
+        plt.yticks(fontsize=12)
         plt.tight_layout()
         os.makedirs(in_output_visual_dir, exist_ok=True)
-        plt.savefig(full_plot_path)
+        plt.savefig(full_plot_path, bbox_inches='tight')
         plt.close()
 
         logger.info(generate_log_success_message(logger_module, logger_module_info, logger_success_message))
@@ -314,14 +364,15 @@ def plot_radial_moving_average_displacement(in_sensor_data_df, in_output_visual_
                    labels=sorted_df["MONTH_NAME_EN"][::max(1, len(sorted_df) // 12)],
                    rotation=45)
 
-        plt.title(plot_title)
-        plt.xlabel(plot_x_label)
-        plt.ylabel(plot_y_label)
-        plt.xticks(rotation=45)
-        plt.grid(True)
+
+        plt.title(plot_title, fontsize=13)
+        plt.xlabel(plot_x_label, fontsize=13)
+        plt.ylabel(plot_y_label, fontsize=13)
+        plt.xticks(rotation=45, fontsize=12)
+        plt.yticks(fontsize=12)
         plt.tight_layout()
         os.makedirs(in_output_visual_dir, exist_ok=True)
-        plt.savefig(full_plot_path)
+        plt.savefig(full_plot_path, bbox_inches='tight')
         plt.close()
 
         logger.info(generate_log_success_message(logger_module, logger_module_info, logger_success_message))
@@ -387,14 +438,14 @@ def plot_tangential_moving_average_displacement(in_sensor_data_df, in_output_vis
                    labels=sorted_df["MONTH_NAME_EN"][::max(1, len(sorted_df) // 12)],
                    rotation=45)
 
-        plt.title(plot_title)
-        plt.xlabel(plot_x_label)
-        plt.ylabel(plot_y_label)
-        plt.xticks(rotation=45)
-        plt.grid(True)
+        plt.title(plot_title, fontsize=13)
+        plt.xlabel(plot_x_label, fontsize=13)
+        plt.ylabel(plot_y_label, fontsize=13)
+        plt.xticks(rotation=45, fontsize=12)
+        plt.yticks(fontsize=12)
         plt.tight_layout()
         os.makedirs(in_output_visual_dir, exist_ok=True)
-        plt.savefig(full_plot_path)
+        plt.savefig(full_plot_path, bbox_inches='tight')
         plt.close()
 
         logger.info(generate_log_success_message(logger_module, logger_module_info, logger_success_message))
